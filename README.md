@@ -21,7 +21,7 @@ docker run -d --name assistant_relay \
 -p 3000:3000 \
 -v /path/to/volume/config.json:/assistant_relay/bin/config.json:rw \
 -v /path/to/volume/audio-responses:/assistant_relay/bin/audio-responses:rw \
-apipa169/assistant-relay:latest
+bgulla/assistant-relay:latest
 ```
 #### Docker Compose
 ```yaml
@@ -34,13 +34,13 @@ services:
         volumes:
             - '/path/to/volume/config.json:/assistant_relay/bin/config.json:rw'
             - '/path/to/volume/audio-responses:/assistant_relay/bin/audio-responses:rw'
-        image: 'apipa169/assistant-relay:latest'
+        image: 'bgulla/assistant-relay:latest'
 ```
 
 
 
 ## Home Assistant
-Assistant Relay is a great addition to Home Assistant. For the Hass.io add-on see: https://github.com/Apipa169/Assistant-Relay-for-Hassio
+Assistant Relay is a great addition to Home Assistant. For the Hass.io add-on see: https://github.com/bgulla/Assistant-Relay-for-Hassio
 
 The commands described on the add-on page will also work if you are not using the add-on.
 
